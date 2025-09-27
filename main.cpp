@@ -1211,8 +1211,8 @@ void handleMovement (bool &shouldReexecutePipeline, bool &goUp, bool &goDown, bo
         changed = true;
     }
     if (sf::Keyboard::isKeyPressed(sf::Keyboard::LControl) || goFast || Controller::isPressed(DS5::L3)) {
-        forward_direction = LinearAlgebra::VecxScalar(forward_direction, 4.f);
-        right_direction = LinearAlgebra::VecxScalar(right_direction, 4.f);
+        forward_direction = LinearAlgebra::VecxScalar(forward_direction, 8.f);
+        right_direction = LinearAlgebra::VecxScalar(right_direction, 8.f);
     }
     if (sf::Keyboard::isKeyPressed(sf::Keyboard::W) || goForward || Controller::getAxisPosition(0, sf::Joystick::Y) <= -50.f) {
         camera_position = LinearAlgebra::AddVec(camera_position, forward_direction);
