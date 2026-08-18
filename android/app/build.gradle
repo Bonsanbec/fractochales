@@ -6,16 +6,16 @@ apply plugin: 'com.android.application'
 //     standardOutput = stdout
 // }
 
-def VERSION_NUM = 325
+def VERSION_NUM = 326
 def VERSION_NUM_SCALED = Integer.valueOf(VERSION_NUM ?: 100)
 def VERSION_NUM_SCALED_STR = (VERSION_NUM_SCALED/100).toString()
 
 android {
-    compileSdk 36
+    compileSdk 37
     defaultConfig {
         applicationId "dev.bonsanbec.fractochales"
         minSdk 21
-        targetSdk 36
+        targetSdk 37
         versionCode VERSION_NUM_SCALED
         versionName "v$VERSION_NUM_SCALED_STR"
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
